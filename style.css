@@ -1,0 +1,26 @@
+:root{
+    --morado:#581845 
+}
+body{    
+    box-sizing: border-box;
+}
+.container{
+    margin: auto;
+    width: 90vw;
+   
+    background-color: #ffdd33;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap: 1vh 1vh;
+    
+}
+.item{    
+    height: 10vh;
+    background-color: aqua;  
+}
+.container :nth-child(20){
+    background-color: #fff;
+    grid-row: 4/5;
+    grid-column: 2/7;
+}
