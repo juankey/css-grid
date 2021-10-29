@@ -1,0 +1,25 @@
+:root{
+    --firt-color:#06500C;
+    --second-color:#00FF00;
+    --third-color:#008000;
+    --fourth-color:#0BDA51;
+    --fifth-color:#00FF00;
+    --sixthcolor:#77DD77;
+    --seventh-color:#71BC78;
+    --eighth-color:#009D71;
+    --nineth-color:#0BDA51;
+    --tenth-color:#568203;
+}
+body{
+    margin: 0;
+    box-sizing: border-box;   
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+   color:var(--third-color);
+}
