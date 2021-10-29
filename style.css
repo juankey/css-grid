@@ -1,7 +1,18 @@
 :root{
-    --morado:#581845 
+    --first-color:#00FF00;
+    --second-color:#008000;
+    --third-color:#008000;
+    --fourth-color:#0BDA51;
+    --fifth-color:#00FF00;
+    --sixth-color:#77DD77;
+    --seventh-color:#71BC78;
+    --eighth-color:#009D71;
 }
-body{    
+body{      
+    margin: 0;
+
+}
+*,*::after,*::before{
     box-sizing: border-box;
 }
 .container{
@@ -11,16 +22,64 @@ body{
     background-color: #ffdd33;
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(5,1fr);
+    grid-template-rows: repeat(5,4rem);
     gap: .3vh .3vh;
     
 }
-.item{    
-    height: 10vh;
+.item{
     background-color: aqua;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .container :nth-child(20){
-    background-color: #fff;
+
     grid-row: 4/5;
     grid-column: 2/7;
+}
+
+/* template css grid */
+.template-container{   
+    width: 98%;
+    margin: 2rem auto; 
+    display: grid;    
+    grid-template-columns:repeat(7,1fr);
+    grid-template-rows: 4rem 5rem 5rem 4rem;
+    grid-template-areas: "nav nav nav nav nav menu menu"
+                         "principal principal principal article1 article1 article1 article1"
+                         "principal principal principal article2 article2 article2 article2"
+                         "foterbox1 foterbox1 foterbox2 foterbox2 foterbox2 foterbox3 foterbox3"
+}   
+      
+.template-box:first-child{
+    background-color:var(--first-color);
+    grid-area: nav;
+}
+.template-box:nth-child(2){
+    background-color: var(--second-color);
+    grid-area: menu;
+}
+.template-box:nth-child(3){
+    background-color:var(--third-color);
+    grid-area: principal;
+}
+.template-box:nth-child(4){
+    background-color: var(--fourth-color);
+    grid-area: article1;
+}
+.template-box:nth-child(5){
+    background-color: var(--fifth-color);
+    grid-area: article2;
+}
+.template-box:nth-child(6){
+    background-color: var(--sixth-color);
+    grid-area: foterbox1;
+}
+.template-box:nth-child(7){
+    background-color: var(--seventh-color);
+    grid-area: foterbox2;
+}
+.template-box:last-child{
+    background-color: var(--eighth-color);
+    grid-area: foterbox3;
 }
