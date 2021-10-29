@@ -19,7 +19,19 @@ body{
 }
 a{
     text-decoration: none;
+    border: 1px solid var(--third-color);    
+    width: 10rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
 }
 a:visited{
    color:var(--third-color);
+}
+a:hover{
+    border: 1px solid var(--third-color); 
+    border-radius: .6rem;
+    color: var(--firt-color);
+    font-weight: bold;
 }
