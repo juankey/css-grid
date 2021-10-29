@@ -18,6 +18,7 @@ body{
     box-sizing: inherit;
 }
 a{
+    color:var(--third-color);
     text-decoration: none;
     border: 1px solid var(--third-color);    
     width: 10rem;
@@ -34,4 +35,8 @@ a:hover{
     border-radius: .6rem;
     color: var(--firt-color);
     font-weight: bold;
+}
+.container{
+    margin: auto;
+    width: 95%;
 }

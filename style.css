@@ -1,7 +1,4 @@
-.container{
-    margin: auto;
-    width: 95%;
-}
+
 .menu{
     display: flex;
     flex-direction: column;
