@@ -12,7 +12,7 @@ body{
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: repeat(5,1fr);
-    gap: 1vh 1vh;
+    gap: .3vh .3vh;
     
 }
 .item{    
