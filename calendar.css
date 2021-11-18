@@ -1,0 +1,24 @@
+.box{
+    padding:0;
+    list-style: none;
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    border:1px solid var(--eighth-color);
+    
+}
+
+.day{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-transform:capitalize;
+    
+}
+.item{
+
+    display: flex;
+    justify-content: center;
+}
+.item:nth-child(8){
+    grid-column: 5/6;
+}
