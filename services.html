@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        img{
+            background-color: rebeccapurple;
+        }
+        p{
+            width:90%;
+          
+            text-align: center;
+        }
+        .container{
+            background-color:#ccc; 
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-content: center;
+        }
+        .principal{ 
+            background-color:#fff;        
+            width: 50vw;                       
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,1fr);
+        }
+        .item:first-child{
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        .item:nth-child(2){
+            grid-column: 2/3;
+            grid-row: 1/2;;
+        }
+        .item:nth-child(3){
+            grid-column: 3/4;
+            grid-row: 1/2;
+        }
+        .item:nth-child(4){
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        .item:nth-child(5){
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .item:nth-child(6){
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+        .item-text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <main class="principal">
+        <article class="item"><img src="./vegetation/arbol 1.png" alt=""></article>
+        <article class="item item-text">
+            <h2>estrategia</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, distinctio!</p>
+        </article>
+        <article class="item"><img src="./vegetation/palm_final_RMA.png" alt=""></article>
+        <article class="item  item-text">
+            <h2>desarrollo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, distinctio!</p>
+        </article>
+        <article class="item"><img src="./vegetation/Planta_12.png" alt=""></article>
+        <article class="item  item-text">
+            <h2>operaciones</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, distinctio!</p>
+        </article>
+    </main>
+    </div>
+</body>
+</html>
