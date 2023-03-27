@@ -5,24 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>responsive</title>
     <style>
-        img{
-            max-width: 100%;
+        html{
+            box-sizing: border-box;
         }
+        *{
+            box-sizing: inherit;
+        }
+        :root{
+            --white: #fff;
+            --gray: #444141;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, section, article, aside, footer {
+            padding: 1.5rem;
+            font-size: 3rem;
+            background-color: var(--gray);
+            color: var(--white);          
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        main{
+            width: 100%;
+        
+        }
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+        }
+        section{
+            flex-direction: column;
+        }
+        @media screen and (min-width: 768px) {
+            .container{
+            grid-template-columns:1fr 1fr 1fr;
+            }
+            header{
+                grid-column: 1/5;
+            }
+            nav{
+                grid-column: 1/5;
+            }
+            main{
+                grid-column: 1/3;
+            }
+            aside{
+                grid-column: 3/5;
+            }
+            footer{
+            grid-column: 1/5;
+        }
+        }
+
     </style>
 </head>
 <body>
-    <header></header>
-    <nav></nav>
-    <main>
-        <article>
-            <figure>
-                <img src="https://picsum.photos/1400/1400?random" alt="">
-                <figcaption>hola</figcaption>
-            </figure>
-        </article>
-        <section></section>
-        <aside></aside>
-    </main>
-    <footer></footer>
+    <div class="container">
+        <header>header</header>
+        <nav>nav</nav>
+        <main>
+            <section>
+                <p>section</p>
+                <article>article</article>
+            </section>
+        </main>
+        <aside>aside</aside>
+            <footer>footer</footer>
+    </div>
 </body>
 </html>
